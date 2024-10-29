@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-projeto}
+      POSTGRES_USER: ${POSTGRES_USER:-projeto}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-projeto}
+    ports:
+      - "5432:5432"
