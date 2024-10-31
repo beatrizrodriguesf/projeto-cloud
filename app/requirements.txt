@@ -3,3 +3,5 @@ psycopg2-binary
 sqlmodel
 pyjwt
 pwdlib[argon2]
+beautifulsoup4
+requests

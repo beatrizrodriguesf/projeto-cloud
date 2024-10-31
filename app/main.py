@@ -5,6 +5,7 @@ from typing import Annotated
 from sqlmodel import Session, select
 from database import get_session
 from hashfunctions import get_password_hash, verify_password
+from consulta import get_day_temp_sp
 
 SessionDep = Annotated[Session, Depends(get_session)]
 
@@ -58,6 +59,6 @@ def login(login: Login, session: SessionDep):
 def consultar(headers: Annotated[CommonHeaders, Header()]):
     try:
         jwt.decode(headers.jwt, key, algorithms=["HS256"])
-        return("Sem webscrapping ainda")
+        return(get_day_temp_sp())
     except:
         raise HTTPException(status_code=401, detail=f"Token inválido")
