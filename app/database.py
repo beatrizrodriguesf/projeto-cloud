@@ -4,7 +4,7 @@ from sqlmodel import SQLModel, Session, select, create_engine
 # Configurações
 user = "projeto"
 password = "projeto"
-host = "localhost:5432"
+host = "db:5432"
 database = "projeto"
 
 sqlite_url = f"postgresql://{user}:{password}@{host}/{database}"
