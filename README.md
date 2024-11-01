@@ -10,7 +10,7 @@ Link para o vídeo com execução da aplicação: https://youtu.be/wgMiOmCpOk8
 
 ### Publicação no Dockerhub:
 
-Para a publicação da imagem da API no dockerhub, foi criado um repositório (api-image). Após isso, foi executado o comando abaixo dentro da pasta app, onde está localizado o arquivo Dockerfile. O comando utilizado realiza a criação e publicação da imagem tanto para Windows quando para Linux.
+Para a publicação da imagem da API no dockerhub, foi criado um repositório (api-image). Após isso, foi executado o comando abaixo dentro da pasta app, onde está localizado o arquivo Dockerfile. O comando utilizado realiza a criação e publicação da imagem tanto para Windows quanto para Linux.
 
 `docker buildx build --platform linux/arm64,linux/amd64 --push -t beatrizrodriguesf/api-image .`
 
@@ -40,7 +40,7 @@ Requisição bem sucedida:
 
 Erro quando o email já está cadastrado:
 
-![Erro](./images/consultar-erro.PNG)
+![Erro](./images/registrar-erro.PNG)
 
 - `/login` : Fazer login do usuário
 
