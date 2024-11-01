@@ -6,7 +6,7 @@
 
 API desenvolvida utilizando FastAPI e conectada com o postgresql. Permite cadastro e login do usuário, e a consulta da temperatura máxima e mínima da cidade de São Paulo no dia. As informações da consulta foram obtidas através de um web scraping. A fonte foi a [página do G1](https://g1.globo.com/previsao-do-tempo/sp/sao-paulo.ghtml) de previsão de tempo da cidade de São Paulo e é atualizada diariamente.
 
-Link para o vídeo com execução da aplicação: https://youtu.be/wgMiOmCpOk8
+Link para o vídeo com execução da aplicação: https://youtu.be/cO9p84El4qU
 
 ### Publicação no Dockerhub:
 
