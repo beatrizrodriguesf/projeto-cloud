@@ -1,0 +1,13 @@
+site_name: API Restfull com Postgres
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - content.code.annotate
+nav:
+- Descrição: index.md
+- Publicação na AWS: aws.md
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
