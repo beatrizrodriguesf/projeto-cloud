@@ -4,9 +4,21 @@
 
 ### Projeto:
 
-API desenvolvida utilizando FastAPI e conectada com o postgresql. Permite cadastro e login do usuário, e a consulta da temperatura máxima e mínima da cidade de São Paulo no dia. As informações da consulta foram obtidas através de um web scraping. A fonte foi a [página do G1](https://g1.globo.com/previsao-do-tempo/sp/sao-paulo.ghtml) de previsão de tempo da cidade de São Paulo e é atualizada diariamente.
+#### Parte 1:
 
-Link para o vídeo com execução da aplicação: https://youtu.be/cO9p84El4qU
+Foi desenvolvida uma API utilizando FastAPI e conectada com o Postgresql. Foi feita uma imagem no dockerhub para a API e, com isso, foi possível criar um arquivo yaml que permite rodar a aplicação com o comando `docker compose up`.
+
+A API permite cadastro e login do usuário, e a consulta da temperatura máxima e mínima da cidade de São Paulo no dia. As informações da consulta foram obtidas através de um web scraping. A fonte foi a [página do G1](https://g1.globo.com/previsao-do-tempo/sp/sao-paulo.ghtml) de previsão de tempo da cidade de São Paulo e é atualizada diariamente.
+
+Link para o vídeo com execução da aplicação docker: https://youtu.be/cO9p84El4qU
+
+#### Parte 2:
+
+Na parte 2 o projeto foi publicado na AWS utilizando o Elastic Kubernets Service. Foi criado um cluster com 2 nodes, um para a API e um para o Postgresql. A API foi disponibilizada publicamente nesse [ip](http://a2bba3ecd5f6445868ac3407a8fdc70d-132096921.us-east-1.elb.amazonaws.com/).
+
+Mais detalhes sobre os passos utilizados podem ser encontrados na [documentação](https://beatrizrodriguesf.github.io/projeto-cloud/aws/).
+
+Link para o vídeo mostrando o que foi criado na AWS e execução da aplicação: https://youtu.be/L5J1Wmn88TA
 
 ### Publicação no Dockerhub:
 
